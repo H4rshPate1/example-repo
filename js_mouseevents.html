@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="xyz()">Remove</button>
+    <p id="abc"></p>
+    <p id="abcd"></p>
+</body>
+
+<script>
+    document.addEventListener("click", function(){
+        document.getElementById("abc").innerHTML = "hewllo";
+    });
+
+    document.addEventListener("mouseover", function(){
+        document.getElementById("abc").innerHTML = "mouse over";
+    });
+
+    document.addEventListener("mouseout", function(){
+        document.getElementById("abc").innerHTML = "mouse out";
+    });
+
+    document.addEventListener("scroll", function(){
+        document.getElementById("abc").innerHTML = "scrolling";
+    });
+
+    document.addEventListener("click", function(){
+        document.getElementById("abc").style.background = "red";
+        
+    });
+
+
+
+    document.addEventListener("mousemove", xyza);
+
+    function xyza(){
+        document.getElementById("abcd").innerHTML = Math.random();
+    }
+
+    function xyz(){
+        document.removeEventListener("mousemove", xyza);
+    }
+</script>
+</html> 

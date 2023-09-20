@@ -1,0 +1,136 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 24px;
+}
+.logo{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.menu-items ul{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+.menu-items ul li{
+    align-items: center;
+}
+.menu-items ul li a{
+    color: black;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.menu-items ul li:last-child,
+.menu-items ul li:last-child a{
+    text-decoration: underline;
+    color: #e37f1c;
+}
+/* popup content starts  */
+.popup-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 250px;
+}
+#popup1, #popup2, #popup3{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    display: none;
+}
+.popup-body{
+    display: flex;
+    justify-content: space-around;
+}
+.popup-para{
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+}
+/* tabbing starts  */
+.tab-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tab-nav li{
+    display: inline-block;
+    padding: 12px;
+    background-color: #1cc2e3;
+    border-radius: 8px 8px 0 0;
+    min-width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+.tab-nav li.active,
+.tab-nav li:hover{
+    background-color: #1376d3;
+}
+.tab-container{
+    margin-bottom: 50px;
+}
+.tab-content{
+    padding: 24px;
+    background-color: #1376d3;
+    color: #fff;
+    display: none;
+} 
+/* accordian starts  */
+.accordion-body{
+    display: none;
+}
+/* image slider container  */
+.slider-container{
+    margin-block: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.images{
+    display: none;
+}
+.img{
+    width: 500px;
+    height: 350px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images.active{
+    display: block;
+}
+.slider-btn{
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    transition: all .4 ease;
+}
+.slider-btn:hover{
+    background-color: #53a0e8;
+    color: #fff;
+    border: none;
+    transform: scale(1.2);
+}
+.spacer{
+    height: 50vh;
+}
