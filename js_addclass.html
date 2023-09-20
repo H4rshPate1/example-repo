@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .ab{
+        background-color: blueviolet;
+        border: 5px solid black;
+        padding: 1rem;
+    }
+</style>
+</head>
+<body>
+    <button onclick="myfunction()">click to add/remove</button>
+    <p id="demo" >hello</p>
+<script>
+function myfunction(){
+
+const x = document.getElementById('demo');
+    if (x.classList.contains('ab')) {
+        x.classList.remove('ab')
+            
+    } else {
+        x.classList.add('ab')
+    }
+}
+</script>
+</body>
+</html>
