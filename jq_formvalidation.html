@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="form-content">
-        <form action="" id="myform" method="post">
+        <form action="" id="myform" method="post" onsubmit="return validateform()">
             <div class="fname">
                 <label for="fname">First Name : </label>
                 <input type="text" id="fname" name="fname" placeholder="Enter Your First Name">
@@ -41,7 +41,7 @@
                     <option value="">Select City</option>
                     <option value="ahm">Ahmedabad</option>
                     <option value="gandhi">Gandhinagar</option>
-                    <option value="kpdwj">Kapaswanj</option>
+                    <option value="kpdwj">Kapadwanj</option>
                 </select>
             </div>
 
@@ -52,7 +52,6 @@
             <input type="submit" id="submit" value="submit">
         </form>
     </div>
-
 <script src="jq_formvalidation.js"></script>
 </body>
 </html>
