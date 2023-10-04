@@ -11,6 +11,7 @@ $(document).ready(function() {
         var letters = /^[a-zA-Z]*$/;
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         var phoneformat = /^\(?([0-9]{3})\)?[-. ]([0-9]{3})[-. ]([0-9]{4})$/; 
+        
 
         if ((firstname.length == "") || (firstname.length < 2) || (!firstname.match(letters))){
             $(".error").remove();
