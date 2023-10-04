@@ -14,7 +14,7 @@ $(document).ready(function() {
 
         if ((firstname.length == "") || (firstname.length < 2) || (!firstname.match(letters))){
             $(".error").remove();
-            $(".fname").append("<p class='error'>*First name is empty</p>");
+            $(".fname").append("<p class='error'>*First name is empty or < 2 char</p>");
             $(".error").css("color", "red");
             fname.focus();
             return false;
