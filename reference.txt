@@ -1,0 +1,54 @@
+preselected dropdown content 
+
+<?php
+function getCountry(){
+    $countries  = array('india'=>'India', 'usa'=>'USA');
+    return $countries; 
+}
+function getState(){
+    $states = array('gujarat'=>'Gujarat', 'karnataka'=>'Karnataka', 'texas'=>'Texas', 'washington'=>'Washington');
+    return $states; 
+}
+function getCity(){
+    $cities = array('ahmedabad'=>'Ahmedabad', 'gandhinagar'=>'Gandhinagar', 'bengaluru'=>'Bengaluru', 
+        'mangaluru'=>'Mangaluru', 'houston'=>'Houston', 'austin'=>'Austin', 'vancouver'=>'Vancouver', 
+        'port angeles'=>'Port Angeles');
+    return $cities; 
+}
+?>
+<?php
+    foreach(getCity() as $cityKey=>$cityValue)
+    {
+        $selected = '';
+        if($cityValue==$city) { 
+            echo $selected = "selected=selected"; 
+        }
+        echo '<option value="'.$cityKey.'" '.$selected.'>';
+        echo $cityValue;
+        echo '</option>';
+    }    
+?> 
+<?php
+    foreach(getState() as $stateKey=>$stateValue)
+    {
+        $selected = '';
+        if($stateValue==$state) { 
+            echo $selected = "selected=selected"; 
+        }
+        echo '<option value="'.$stateKey.'" '.$selected.'>';
+        echo $stateValue;
+        echo '</option>';
+    } 
+?> 
+<?php
+    foreach(getCountry() as $countryKey=>$countryValue)
+    {
+        $selected = '';
+        if($countryValue==$country) { 
+            echo $selected = "selected=selected"; 
+        }
+        echo '<option value="'.$countryKey.'" '.$selected.'>';
+        echo $countryValue;
+        echo '</option>';
+    } 
+ ?>
